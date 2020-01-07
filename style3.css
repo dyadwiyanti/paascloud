@@ -1,0 +1,81 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+
+/*Set the position of menu*/
+nav {
+	margin: 0px auto; 
+	text-align: center;
+}
+
+/*Not showing submenu*/
+nav ul ul {
+	display: none;
+	line-height: 15px;
+}
+
+/*Show submenu when menu blocked*/
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+/*Set style of menu*/
+nav ul {
+	background: none;
+	padding: 0 0px;
+	border-radius: 0px 0px 0px 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	font-family: Helvetica, sans-serif; 
+	font-size: 18px;
+	line-height: 0px;
+}
+
+	nav ul:after {
+		content: ""; clear: both; display: block; 
+	}
+
+/*menu word position*/
+	nav ul li {
+		float: left;
+	}
+	
+/*block bg color of menu*/		
+		nav ul li:hover {
+			background: rgba(0, 0, 0, 0.3);
+		}
+		
+/*menu block font color*/		
+			nav ul li:hover a {
+				color: pink;  
+			}
+
+/*set link text of menu*/			
+		nav ul li a {
+			display: block; padding: 20px 50px;
+			color: #fff; text-decoration: none; 
+		}
+			
+/*submenu set*/		
+	nav ul ul {
+		background:rgba(0, 0, 0, 0.7); border-radius: 0px; padding: 0;
+		position: absolute; top: 100%; 
+	}
+
+/*list down submenu*/	
+		nav ul ul li {
+			float: none; 
+			position: relative;
+			border-left: 4px solid grey;	
+		}
+
+/*set link text of submenu*/		
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}	
+
+		
+		
